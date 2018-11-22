@@ -1,11 +1,18 @@
 @charset "UTF-8";
 /* Simple Pro 简
- * Author 芥末
- * 2018-09-27
+ * 芥末  https://www.we63.com
+ * 2018-11-22
  */
 /* 全局变量  */
+body {
+  font-size: 16px; }
+
 .s-page-wrapper {
-  max-width: 750rpx; }
+  max-width: 1500rpx; }
+
+.s-page {
+  max-width: 1500rpx;
+  margin: 0 auto; }
 
 /* 含有阴影 */
 .has-shadow {
@@ -27,6 +34,12 @@
 /* 网格 */
 .is-flex {
   display: flex; }
+
+.is-flex-none {
+  flex: none; }
+
+.is-border-box {
+  box-sizing: border-box; }
 
 .is-block {
   display: block; }
@@ -831,6 +844,33 @@ a {
 .has-underline {
   text-decoration: underline; }
 
+.has-nowrap {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.has-nowrap-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; }
+
+.has-nowrap-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; }
+
+.has-nowrap-4 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; }
+
 .is-red {
   color: #e64340 !important; }
 
@@ -868,16 +908,22 @@ a {
   background-color: #fff !important; }
 
 .has-title-color {
-  color: black; }
+  color: black !important; }
 
 .has-content-color {
-  color: #353535; }
+  color: #353535 !important; }
 
 .has-desc-color {
-  color: #888888; }
+  color: #888888 !important; }
 
 .has-link-color {
-  color: #576b95; }
+  color: #576b95 !important; }
+
+.has-content-color-r {
+  color: rgba(255, 255, 255, 0.85) !important; }
+
+.has-desc-color-r {
+  color: rgba(255, 255, 255, 0.65) !important; }
 
 .is-normal {
   font-weight: normal; }
@@ -906,6 +952,9 @@ a {
 /* 字体居中 */
 .is-center {
   text-align: center !important; }
+
+.is-justify {
+  text-align: justify; }
 
 .is-p {
   font-size: 32rpx;
@@ -979,11 +1028,20 @@ a {
 .is-33vh {
   height: 33vh; }
 
+.is-80vh {
+  height: 80vh; }
+
+.is-70vh {
+  height: 70vh; }
+
 .is-50vh {
   height: 50vh; }
 
 .is-20vh {
   height: 20vh; }
+
+.is-30vh {
+  height: 30vh; }
 
 /*页面宽度*/
 .is-width-30 {
@@ -1000,6 +1058,9 @@ a {
 
 .is-width-70 {
   width: 70% !important; }
+
+.is-height-100 {
+  height: 100% !important; }
 
 .is-width-80 {
   width: 80% !important; }
@@ -1071,6 +1132,15 @@ a {
   border-radius: 50%; }
 
 /* 行高 */
+.is-lh-12px {
+  line-height: 24rpx !important; }
+
+.is-lh-14px {
+  line-height: 28rpx !important; }
+
+.is-lh-16px {
+  line-height: 32rpx !important; }
+
 .is-lh-1 {
   line-height: 1 !important; }
 
@@ -1125,6 +1195,12 @@ a {
 
 .is-size-60 {
   font-size: 120rpx !important; }
+
+.is-size-70 {
+  font-size: 140rpx !important; }
+
+.is-size-80 {
+  font-size: 160rpx !important; }
 
 /* 徽标 */
 .has-badge-border {
@@ -1233,7 +1309,8 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform-origin: left top; }
+  -webkit-transform-origin: left top;
+  z-index: 2; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .has-bordertb:before {
@@ -2322,6 +2399,115 @@ a {
 .has-pdb-60 {
   padding-bottom: 120rpx !important; }
 
+/* 适配phone */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  html {
+    font-size: 50px; }
+
+  body {
+    font-size: 16px; }
+
+  .is-p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 15px;
+    text-align: justify; }
+
+  .is-h1 {
+    font-size: 24px !important; }
+
+  .is-h2 {
+    font-size: 22px !important; }
+
+  .is-h3 {
+    font-size: 18px !important; }
+
+  .is-h4 {
+    font-size: 16px !important; }
+
+  .is-h5 {
+    font-size: 14px !important; }
+
+  .is-h6 {
+    font-size: 12px !important; }
+
+  /* 字体大小 */
+  .is-size-12 {
+    font-size: 12px !important; }
+
+  .is-size-14 {
+    font-size: 14px !important; }
+
+  .is-size-16 {
+    font-size: 16px !important; }
+
+  .is-size-17 {
+    font-size: 17px !important; }
+
+  .is-size-18 {
+    font-size: 18px !important; }
+
+  .is-size-20 {
+    font-size: 20px !important; }
+
+  .is-size-25 {
+    font-size: 25px !important; }
+
+  .is-size-30 {
+    font-size: 30px !important; }
+
+  .is-size-35 {
+    font-size: 35px !important; }
+
+  .is-size-40 {
+    font-size: 40px !important; }
+
+  .is-size-50 {
+    font-size: 50px !important; }
+
+  .is-size-60 {
+    font-size: 60px !important; }
+
+  .is-size-70 {
+    font-size: 70px !important; }
+
+  .is-size-80 {
+    font-size: 80px !important; }
+
+  /* 排版容器，小程序可以不用，正文排版等，请在容器上添加此类，自动格式化 */
+  .s-typo p {
+    font-size: 16px;
+    color: #353535;
+    line-height: 2;
+    margin-bottom: 15px;
+    text-align: justify; }
+  .s-typo h1 {
+    font-size: 24px; }
+  .s-typo h2 {
+    font-size: 22px; }
+  .s-typo h3 {
+    font-size: 18px; }
+  .s-typo h4 {
+    font-size: 16px; }
+  .s-typo h5 {
+    font-size: 14px; }
+  .s-typo h6 {
+    font-size: 12px; }
+  .s-typo ol li {
+    list-style-type: decimal;
+    margin-left: 16px;
+    line-height: 2; }
+  .s-typo ul li {
+    list-style-type: disc;
+    margin-left: 16px;
+    line-height: 2; } }
+/* 适配pad */
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 100px; }
+
+  body {
+    font-size: 16px; } }
 /* 按钮  */
 .is-btn, .is-btn-lg, .is-btn-md {
   position: relative;
@@ -2385,20 +2571,21 @@ a {
 .has-btn-radius {
   border-radius: 50px; }
 
-.has-bg-green {
+.has-btn-green {
   border: 0;
   background-color: #09bb07;
   color: #fff;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
+  background-clip: padding-box;
+  box-shadow: 0 2px 6px #d9d9d9; }
 
-.has-bg-green:not(.disabled):not(:disabled):active, .has-bg-green.active {
+.has-btn-green:not(.disabled):not(:disabled):active, .has-bg-green.active {
   background: #179b16 !important;
   color: rgba(255, 255, 255, 0.6) !important;
   -webkit-background-clip: padding-box;
   background-clip: padding-box; }
 
-.has-bg-blue {
+.has-btn-blue {
   border: 0;
   background-color: #2A62FF;
   color: #fff;
@@ -2406,7 +2593,15 @@ a {
   background-clip: padding-box;
   box-shadow: 0 2px 6px #71b6f7; }
 
-.has-bg-blue:not(.disabled):not(:disabled):active, .has-bg-blue.active {
+.has-btn-white {
+  border: 0;
+  background-color: #fff;
+  color: #111;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: 0 2px 6px #d9d9d9; }
+
+.has-btn-blue:not(.disabled):not(:disabled):active, .has-bg-blue.active {
   background: #0e80d2 !important;
   color: rgba(255, 255, 255, 0.6) !important;
   -webkit-background-clip: padding-box;
@@ -2623,7 +2818,128 @@ a {
   color: #888888;
   font-size: 28rpx; }
 
+.is-form-title {
+  font-size: 28rpx;
+  color: #888888;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx; }
 
+.is-input {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #353535;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  background: 0 0;
+  resize: none; }
+
+.is-input1 {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #353535;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  appearance: none;
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+  border-radius: 44rpx;
+  outline: 0;
+  display: block;
+  padding-left: 30rpx;
+  margin: 0;
+  font-family: inherit;
+  background: #fff;
+  resize: none; }
+
+.is-input2 {
+  width: 100%;
+  height: 76rpx;
+  line-height: 76rpx;
+  color: #353535;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  background: #fff;
+  resize: none; }
+
+.is-input3 {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #353535;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  appearance: none;
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+  outline: 0;
+  display: block;
+  padding-left: 30rpx;
+  margin: 0;
+  font-family: inherit;
+  background: #fff;
+  resize: none; }
+
+.is-input4 {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #353535;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  display: block;
+  padding-left: 30rpx;
+  margin: 0;
+  font-family: inherit;
+  background: #f4f4f4;
+  resize: none; }
+
+.is-input-word {
+  position: absolute;
+  font-size: 24rpx;
+  right: 10rpx;
+  top: 20rpx;
+  bottom: 20rpx;
+  line-height: 40rpx;
+  color: #fff;
+  padding: 4rpx 20rpx;
+  background: #888888;
+  border-radius: 4rpx;
+  z-index: 10; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.ttf?t=1537319277891") format("truetype"); }
+.s-icon {
+  font-family: "iconfont" !important;
+  color: #353535;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .s-divide {
   height: 1px;
