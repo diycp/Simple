@@ -1,0 +1,118 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+
+
+{
+  "id": 10004,
+  "title": "三星存储卡32G/64G",
+  "img": "/img/demo/112.png",
+  "price": "49.00",
+  "type": "全新",
+  "store": "98",
+  "status": 1
+},
+{
+"id": 10001,
+"title": "魅族无线充电器",
+  "img": "/img/demo/113.png",
+"price": "99.00",
+"type": "二手",
+"store": "98",
+"status": 0
+},
+{
+"id": 10001,
+"title": "魅族 Micro USB 熊猫数据线",
+  "img": "/img/demo/114.png",
+"price": "49.00",
+"type": "二手",
+"store": "98",
+"status": 0
+},
+{
+"id": 10001,
+"title": "魅族盒子 一键找回遥控器",
+  "img": "/img/demo/115.png",
+"price": "199.00",
+"type": "二手",
+"store": "98",
+"status": 0
+},
+{
+"id": 10001,
+"title": "魅族路由器 极速版",
+  "img": "/img/demo/117.png",
+"price": "99.00",
+"type": "二手",
+"store": "98",
+"status": 0
+},
+{
+"id": 10001,
+"title": "魅族 Flow Bass 三单元耳机",
+  "img": "/img/demo/118.png",
+"price": "499.00",
+"type": "二手",
+"store": "98",
+"status": 0
+},
+{
+"id": 10001,
+"title": "魅族 LIVE 四单元动铁耳机",
+  "img": "/img/demo/120.png",
+"price": "1299.00",
+"type": "二手",
+"store": "98",
+"status": 0
+},
+{
+"id": 10001,
+"title": "魅族铁三角耳机",
+  "img": "/img/demo/119.png",
+"price": "58.00",
+"type": "二手",
+"store": "98",
+"status": 0
+}
+        ,
+    {
+      "id": 10000,
+      "title": "魅族铁三角耳机",
+      "img": "/img/demo/113.png",
+      "price": "58.00",
+      "type": "全新",
+      "store": "98",
+      "status": 1
+    },
+    {
+      "id": 10001,
+      "title": "魅族 16X 高透保护膜",
+      "img": "/img/demo/115.png",
+      "price": "158.00",
+      "type": "二手",
+      "store": "98",
+      "status": 0
+    },
+    {
+      "id": 10002,
+      "title": "魅族移动电源3",
+      "img": "/img/demo/114.png",
+      "price": "73.00",
+      "store": "98",
+      "type": "全新",
+      "status": 1
+    },
+    {
+      "id": 10003,
+      "title": "魅族 EP-31 耳机",
+      "img": "/img/demo/120.png",
+      "price": "179.00",
+      "store": "98",
+      "type": "全新",
+      "status": 1
+    }
+  ]
+}

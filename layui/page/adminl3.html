@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Simple - 简！ </title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <meta name="keywords" content="简,页面模板,手机模板,ui,ui框架,前端框架,模板,Simple">
+    <meta name="description" content="Simple 一个轻量，简约，包含丰富模块化前端框架，帮您快速构建组件，制作网站。">
+    <link rel="stylesheet" href="/layui/css/vSimplelayui.css?v=20181122">
+
+    <style>
+        body{
+            background-color: #f5f8f9;
+        }
+    </style>
+</head>
+<body class="is-none">
+
+
+<div class="admin-header">
+    <div class="header-logo ">
+        <img src="http://g.we63.com/l/img/logo/logoadmin.png" alt="">
+    </div>
+
+    <ul class="header-left">
+        <li><a href=""><i class="layui-icon layui-icon-website" ></i></a></li>
+        <li><a href=""><i class="layui-icon layui-icon-flag"></i></a></li>
+        <li><a href=""><i class="layui-icon layui-icon-search"></i></a></li>
+    </ul>
+
+
+    <ul class="layui-nav header-right">
+        <li class="layui-nav-item  header-right-item">
+            <a href="" ><img src="./img/faces/tx.png" class="layui-nav-img">芥末萌萌哒</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;">修改信息</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd><a href="javascript:;">退了</a></dd>
+            </dl>
+        </li>
+
+        <li class="layui-nav-item  header-right-item">
+            <a href="">我的消息<span class="layui-badge-dot"></span></a>
+        </li>
+
+        <li class="layui-nav-item header-right-item">
+            <a href=""><i class="layui-icon layui-icon-close"></i></a>
+        </li>
+
+    </ul>
+    <div class="layui-clear"></div>
+</div>
+
+<div class="admin-menu">
+    <p class="admin-menu-f" id="admin-menu-f"><i class="layui-icon layui-icon-more"></i></p>
+
+    <ul>
+        <li class="menu-item ">
+            <a href="#"><i class="layui-icon layui-icon-console " ></i><span class="wb-nav-title"> 仪表盘</span> </a>
+            <span class="menu-item-tip">仪表盘</span>
+        </li>
+
+        <li class="menu-item ">
+            <a href="#"><i class="layui-icon layui-icon-component" ></i><span class="wb-nav-title"> 组件库</span> </a>
+            <span class="menu-item-tip">组件库</span>
+        </li>
+
+        <li class="menu-item ">
+            <a href="#"><i class="layui-icon layui-icon-table" ></i> <span class="wb-nav-title"> 表格库</span> </a>
+            <span class="menu-item-tip">表格库</span>
+        </li>
+
+
+        <li class="menu-item active">
+            <a href="#"><i class="layui-icon layui-icon-radio" ></i> <span class="wb-nav-title"> 表单库</span> </a>
+            <span class="menu-item-tip">表单库</span>
+        </li>
+
+
+        <li class="menu-item">
+            <a href="#"><i class="layui-icon layui-icon-chart" ></i><span class="wb-nav-title"> 图表库</span>  </a>
+            <span class="menu-item-tip">图表库</span>
+        </li>
+
+
+        <li class="menu-item">
+            <a href="#"><i class="layui-icon layui-icon-template-1 " ></i><span class="wb-nav-title"> 页面库</span> </a>
+            <span class="menu-item-tip">页面库</span>
+        </li>
+
+        <li class="menu-item">
+            <a href="#"><i class="layui-icon layui-icon-diamond is-yellow" ></i><span class="wb-nav-title"> 模板库</span> </a>
+            <span class="menu-item-tip">模板库</span>
+        </li>
+
+        <li class="menu-item item-bottom " >
+            <a href="#"><i class="layui-icon  layui-icon-set" ></i><span class="wb-nav-title"> 系统设置</span></a>
+            <span class="menu-item-tip">系统设置</span>
+        </li>
+
+
+    </ul>
+</div>
+
+
+<div class="admin-submenu">
+    <div style="width: 100%; height: 100%">
+
+        <div class="submenu-scene">
+            数据表格
+        </div>
+
+        <div class="submenu-item">数据</div>
+        <ul>
+            <li id="adminflag"><a href="admin.html"> Index 首页</a></li>
+            <li id="adminl3flag"><a href="adminl3.html">开启分页 <span class="layui-badge-dot"></span></a></li>
+
+            <li id="adminl2flag"><a href="adminl2.html">图片表格 <span class="layui-badge-dot"></span></a></li>
+
+
+            <li id="adminl1flag"><a href="adminl1.html">文字表格 <span class="layui-badge-dot"></span></a></li>
+
+
+
+
+        </ul>
+
+        <div id="admin-submenu-c">
+            <i class="layui-icon layui-icon-prev"></i>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="admin-content">
+    <div class="layui-row layui-col-space30">
+        <div class="layui-col-md12">
+
+            <div class="adminpageheader">
+                <h2 class="adminpagetitle">当前位置：<a href="">后台空模板</a></h2>
+            </div>
+
+            <div class="admin-block">
+                <div class="block">
+
+                    <div class="block-action s-row-flex is-justify-between">
+                        <div class="s-col is-col-3">
+                            <button class="layui-btn layui-btn-sm"><i class="layui-icon">&#xe608;</i> 动作</button>
+                        </div>
+
+                        <div class="s-col is-col-4">
+                            <form class="layui-form" action="" >
+                                <div  class="input-action">
+                                    <input class="layui-input" type="text"   value="" placeholder="请输入搜索内容" >
+                                    <button  class="layui-btn layui-btn-sm layui-bg-gray action-button">搜索</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="block-tab">
+
+                        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                            <ul class="layui-tab-title">
+                                <li class="layui-this">参数设置</li>
+                                <li>参数设置</li>
+                            </ul>
+
+                            <div class="layui-tab-content">
+                                <div class="layui-tab-item layui-show">
+
+
+                                    <div class="block-body admin-list">
+
+                                        <!--内容 -->
+
+
+                                        <table class="layui-hide" id="notice" lay-filter="notice"></table>
+
+
+                                        <script type="text/html" id="noticebar">
+                                            <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+                                            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                                        </script>
+
+                                        <!-- end -->
+                                    </div>
+
+
+                                </div>
+                                <div class="layui-tab-item">
+                                    <div class="block-body">
+                                        <p>毛都没有...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="admin-footer">
+                <img src="./img/logo/footlogo.png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="admin-panel">
+    <div class="layui-collapse">
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-face-smile-fine"></i> <span class="sfqt">后台播报</span>   </h2>
+            <div class="layui-colla-content layui-show item-color">
+                <ul>
+                    <li>更新了后台整体布局代码，剔除行内样式 </li>
+                    <li>冲突样式放低优先级，不影响样式覆盖 </li>
+                    <li>修复菜单搜索文字弹跳的Bug </li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-speaker" ></i>  <span class="sfqt">内部公告</span></h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-log" ></i>  <span class="sfqt">工作日志</span></h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-survey" ></i>  <span class="sfqt">我的工单</span></h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+
+
+
+
+        <div class="layui-colla-item ">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-notice"></i>  <span class="sfqt">系统更新</span></h2>
+            <div class="layui-colla-content item-color">
+                <ul>
+                    <li>暂无</span> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-about" ></i>  <span class="sfqt">联系我们</span></h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+    </div>
+
+
+    <div class="admin-panel-a">
+        <div id="admin-panel-c"><i class="layui-icon layui-icon-spread-left"></i> 收起面板</div>
+    </div>
+
+
+
+</div>
+
+
+
+<script src="/layui/layui.js"></script>
+
+
+
+<script>
+
+    layui.use(['element','form', 'layer', 'jquery','upload'], function () {
+
+        var element = layui.element;
+        var form = layui.form;
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var upload = layui.upload;
+
+        /* 左菜单控制 */
+
+
+        var classStr = $('body').attr('class');
+
+        if(localStorage.getItem('simple-admin-menu')){
+            var loaclClassStr = localStorage.getItem('simple-admin-menu')
+            $('body').attr('class',loaclClassStr);
+        }else{
+            var diyclassStr = 'admin-panel-open admin-submenu-open admin-menu-fold' //初始化你喜欢的样式菜单
+            localStorage.setItem('simple-admin-menu',diyclassStr)
+            $('body').attr('class',diyclassStr);
+        }
+
+        console.log();
+
+        $('#admin-menu-f').click(function () {
+            if($('body').hasClass('admin-menu-open')){
+                $('body').removeClass('admin-menu-open').addClass('admin-menu-fold')
+                var classStr = $('body').attr('class');
+                localStorage.setItem('simple-admin-menu',classStr)
+
+            }else{
+                $('body').removeClass('admin-menu-fold').addClass('admin-menu-open')
+                var classStr = $('body').attr('class');
+                localStorage.setItem('simple-admin-menu',classStr)
+            }
+        })
+
+
+
+        /* 左侧收缩hover效果 */
+        $('.menu-item').mouseover(function () {
+
+            if($('.admin-menu-fold').length>0){
+                $(this).find('.menu-item-tip').show();
+            }
+        });
+        $('.menu-item').mouseout(function () {
+
+            if($('.admin-menu-fold').length>0){
+                $(this).find('.menu-item-tip').hide();
+            }
+
+        });
+
+
+
+
+
+
+
+        /* 子菜单控制 */
+        $('#admin-submenu-c').click(function () {
+            if($('body').hasClass('admin-submenu-open')){
+                $('body').removeClass('admin-submenu-open').addClass('admin-submenu-fold')
+                var classStr = $('body').attr('class');
+                localStorage.setItem('simple-admin-menu',classStr)
+            }else{
+                $('body').removeClass('admin-submenu-fold').addClass('admin-submenu-open')
+                var classStr = $('body').attr('class');
+                localStorage.setItem('simple-admin-menu',classStr)
+            }
+        });
+
+
+
+
+        /* 侧边栏控制面板 */
+        $('#admin-panel-c').click(function () {
+            if($('body').hasClass('admin-panel-open')){
+                $('body').removeClass('admin-panel-open').addClass('admin-panel-fold')
+                var classStr = $('body').attr('class');
+                localStorage.setItem('simple-admin-menu',classStr)
+            }else{
+                $('body').removeClass('admin-panel-fold').addClass('admin-panel-open')
+                var classStr = $('body').attr('class');
+                localStorage.setItem('simple-admin-menu',classStr)
+            }
+        });
+
+
+
+        let webUrl = document.URL;
+        let sLookStrart = webUrl.lastIndexOf('/')
+        let sLookEnd = webUrl.lastIndexOf('.')
+        let hightLightFlag = "#"+(webUrl.substr(sLookStrart+1,(sLookEnd-sLookStrart-1)))+'flag';
+        needHightLight = document.querySelector(hightLightFlag)
+        needHightLight.classList.add('active')
+
+
+
+
+    });
+</script>
+
+
+
+
+</body>
+</html>
+
+
+<script>
+
+
+    layui.use(['jquery','table'], function(){
+        var $ = layui.jquery;
+
+        var table = layui.table;
+
+
+
+
+        table.render({
+            elem: '#notice',
+            id:'notice'
+            ,url:'./l1.json'
+            ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+            ,cols: [[
+                {type:'checkbox'}
+                ,{field:'id', width:70, title: 'ID', sort: true}
+                ,{field:'img', title: '图片',templet:'<div><img src="{{d.img}}" alt="" width="72px" height="72px"> </div>'}
+                ,{field:'title', title: '标题'}
+
+                ,{field:'type',  width:60, title: '类型', templet: function(d){
+
+                        if(d.type === '二手'){
+                            return    '<div><span class="layui-badge has-bg-grey ">'+d.type+'</div>'
+                        }else{
+                            return    '<div><span class="layui-badge has-bg-green">'+d.type+'</div>'
+                        }
+                    }}
+                ,{field:'price', title: '价格', sort: true}
+                ,{ title: '操作',toolbar: '#noticebar'}
+
+            ]]
+            ,page: true
+        });
+
+
+
+        //监听表格复选框选择
+        table.on('checkbox(notice)', function(obj){
+            console.log(obj)
+        });
+
+        //监听工具条
+        table.on('tool(notice)', function(obj){
+            var data = obj.data;
+            if(obj.event === 'detail'){
+                layer.msg('ID：'+ data.id + ' 的查看操作');
+            } else if(obj.event === 'del'){
+                layer.confirm('真的删除行么', function(index){
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if(obj.event === 'edit'){
+                layer.alert('编辑行：<br>'+ JSON.stringify(data))
+            }
+        });
+
+
+
+
+
+    });
+
+
+</script>
